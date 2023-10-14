@@ -1,0 +1,90 @@
+.rounded-circle-custom {
+    width: 200px; /* Укажите желаемую ширину и высоту */
+    height: 200px; /* Укажите желаемую ширину и высоту */
+    object-fit: cover; /* Сохраняет соотношение сторон и делает изображение круглым */
+}
+
+.rounded-circle-custom:hover {
+  border: 1px solid #FFD700;
+}
+
+
+h1 {
+	float: left;
+    color: #343a40;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0px 0;
+    letter-spacing: 1px;
+}
+
+
+
+
+h2 {
+	float: center;
+	font-family: geneva;
+    color: #ffffff ;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 30px;
+    letter-spacing: 1px;
+    /*text-align: center;*/
+}
+
+h3 {
+	text-align: center;
+    
+}
+
+       
+
+     .header {
+    background-image: url('view.jpeg'); /* Замените 'background.jpg' на вашу фоновую картинку */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Цвет текста */
+    padding: 10px 0; /* Отступы сверху и снизу для выравнивания контента по центру */
+    text-align: center; /* Выравнивание текста по центру */
+        height: 100vh; /* Высота равная высоте видимой области окна браузера */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+        .header-content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.7); /* Прозрачный фон для контента */
+            padding: 20px;
+        }
+
+        /* Стили для логотипа */
+        .logo {
+            font-size: 15px;
+            color: #140551;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        /* Убираем края у навигации */
+        .navbar {
+            
+            padding: 1px 0;
+            text-align: left;
+
+        }
+
+        .card-body {
+        	font-family: geneva;
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+}
+.heart {
+    width: 23px;
+}
+
+

@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт-визитка Елизаветы</title>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> 
+    
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 0) {
+                $('#navbar').addClass('bg-primary');
+            } else {
+                $('#navbar').removeClass('bg-primary');
+            }
+        });
+    });
+</script>
+
+
+</head>
+<body>
+<div>
+    <div class="header">
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light">
+            <div class="container">
+                <a class="logo navbar-brand" href="#">Елизавета</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#main">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Навыки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Резюме</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row text-center">
+            <div>
+                <div class="thumbnail">
+                    <img src="ME.jpg" alt="Моя фотография" class="rounded-circle img-thumbnail rounded-circle-custom">
+                </div>
+                <h2>Меня зовут Елизавета Лазеева</h2>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <main class="my-4">
+            <div class="card" id="main">
+                <div class="card-body">
+                    <h5 class="card-title">Я - QA engineer</h5>
+                    <p class="card-text">Я — тестировщик с более чем двухлетним опытом работы в области функционального и нефункционального тестирования программного обеспечения, включая тестирование десктопных приложений и веб-сайтов, тестирования UI/UX, API</p>
+                </div>
+            </div>
+            <div id="skills">
+                <h3>Навыки и стек</h3>
+                  <ul>
+                    <li>Postman</li>
+                    <li>Swagger</li>
+                    <li>MySQL</li>
+                    <li>REST-API, SOAP</li>
+                    <li>Jira</li>
+                    <li>Qase.io</li>
+                    <li>Charles</li>
+                    <li>Kibana</li>
+                    <li>Sentry</li>
+                    <li>HTML, СSS</li>
+                    <li>Pixel perfect</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+        </main>
+        
+        <footer class="bg-light text-center text-lg-start" id="contacts">
+  <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <p><i class="fas fa-phone me-3 text-secondary"></i> +7(911)-250-82-88</p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <p><i class="fas fa-envelope me-3 text-secondary"></i> mooouak@bk.ru</p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a href="https://t.me/elisabeth8" class="me-4 link-secondary">
+                        <i class="fa-2x fa-brands fa-telegram"></i>
+                    </a>
+                
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <a href="https://vk.com/dr.liza" class="me-4 link-secondary">
+                        <i class="fa-2x fab fa-vk"></i>
+                    </a>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+  <!-- Grid container -->
+
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Дизайн мой 
+            <img class="heart" src="heart.svg">
+          </div>
+          <!-- Copyright -->
+        </footer>
+    </div>
+</div>
+</body>
+</html>
